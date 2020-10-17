@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">  
+
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:700,wght@500&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  margin: 0;
+  
+}
+
+/* Navbar */
+
+nav{
+  background-color: #060606;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  z-index: 100;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0; 
+  list-style-type: none; 
+}
+
+ul li a {
+  color: #fff;  
+  padding: 20px;
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+section{
+  padding: 20px; 
+  margin: 15px auto 0;
+}
+
+.bg-blue{
+  background-color: #a2c0cb; 
+  color: #fff;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tribute-info {
+  margin: 0 10px;
+  max-width: 450px;
+}
+
+.responsive-img {
+  display: block;
+  max-width: 100%;
+}
+
+.img-div p {
+  background-color: #eee;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.video-wrapper {
+  margin: 15px;
+}
+
+
+.bg-grey{
+  background-color: #8e8e8e; 
+  color: #fff;
+}
+
+
+.social-ul a{
+  font-size: 32px;
+}
+
+/* Gallery */
+
+
+
+.fling-minislide {width:800px; height:400px; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+ 
+/* Gallery */
+  
+  footer{
+  background-color: #060606;
+  color: #fff;
+  padding: 15px;
+  text-align: centre; 
+    
+  }
+
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="#main">About</a></li>
+          <li><a href="#popular">Popular Videos</a></li>
+          <li><a href="#gallery">Image Gallery</a></li>
+        </ul>
+        </nav> 
+        
+      
+        
+        <section id="main">
+          <div class="container">
+          <div id="tribute-info" class="tribute-info">
+            <h1 id="title">Erica Joy Baker</h1> 
+        <p>Erica is a Director of Engineering at GitHub and advocate for diversity, equity, and inclusion in tech, as well as expanding access to tech exposure and education. Erica's career in tech began fifteen years ago doing domain administration for the University of Alaska Statewide System, before becoming a Googler in 2006. Erica's role grew and shifted within Google, growing from Support Technician to Site Reliability Engineer. At Slack, she built the Native Client Build and Release infrastructure. She managed the Infrastructure team at Patreon, led the GitHub Integration Engineering Team at Microsoft, and is now leading the Enterprise Tools organization at GitHub.
+       </p>
+          <p>
+      Erica was previously on the advisory Boards for Atipica and Hack the Hood, the Code.org Diversity Council, the Barbie Global Advisory Board, the Board of Directors for Girl Develop It, and a Tech Mentor for Black Girls Code. Erica is a founding member of Project Include, was the 2015 Level Playing Field Institute Lux Award winner, a nominee for the 2016 Crunchies Include Diversity Award, and was included in WIRED Magazine's 2016 Next List. Erica is currently based in Oakland, California.
+      </p> 
+          <div id="img-div" class="img-div">
+            <div class="container">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/erica-joy-baker-1599237035.jpg?resize=380:*" alt="brad" id="image" class="responsive-img"/>
+            <p id="img-caption"><strong>Erica Rocks!</strong> 💁🏾 <br>Check out her website <a href="https://www.ericabaker.com/" target="_blank" id="tribute-link">here.</a></p> 
+          </div> 
+          </div>
+      </div>
+            <div>
+        </section>
+        
+        <section id="popular" class="bg-grey">
+          <h2>Popular Videos</h2>
+          <div class="container">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/AGQsOosMYfA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div> 
+          
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/gi02tn3K2b4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+          <div class="video-wrapper">
+            <iframe  src="https://www.youtube.com/embed/6rqdi2j_Kig" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+        <div class="video-wrapper">
+            <iframe  src="https://www.youtube.com/embed/MYauOQ204VA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          </div>
+        </section>  
+        
+        <section id="gallery">
+          <div class="container">
+          <h2>Image Gallery</h2>
+          <div class="contanier">
+          <div class="fling-minislide">
+        <img src="https://tctechcrunch2011.files.wordpress.com/2016/05/tcdisrupt_ny16-8962.jpg" alt="Slide 4" />
+        <img src="https://sec.ch9.ms/ch9/12de/fe0fd80f-9bc5-4f5d-9351-9f9a4c4e12de/TOSS-15_512.jpg" alt="Slide 3" />
+        <img src="https://s.wsj.net/public/resources/images/BN-NV880_techdi_P_20160504072336.jpg" alt="Slide 2" />
+        <img src="https://s3.amazonaws.com/talkstar-photos/uploads/b5b699d3-bf78-4e61-90ac-a48f68eeed2e/EricaJoyBaker_2017S-embed.jpg" alt="Slide 1" />
+      </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        
+          
+          <section id="social" class="bg-blue">
+            <h2>Follow Erica!</h2>
+            <ul class="container social-ul">
+              <li><a href="https://github.com/waferbaby/usesthis/blob/master/posts/2018-05-03-erica.joy.baker.markdown" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://m.facebook.com/girlgeekx/photos/a.10150785463542188/10158821747112188/?type=3" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/theericajoy/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/ericajoy/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </section>
+          
+          <footer> 
+            <h2>We ❤️️ to code</h2> 
+            </footer>
+        
+        
+      </div> 
+      </div> 
+      
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</body>
+</html>
